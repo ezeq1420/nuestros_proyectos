@@ -19,8 +19,8 @@
     <nav>
       <ul>
         <li><a href="./index.html">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
     <div>
@@ -49,7 +49,7 @@
         <img src="https://via.placeholder.com/300x250" alt="">
         <ul>
           <li>
-            <h2>Producto</h2>
+            <h2 id="productos">Producto</h2>
           </li>
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
@@ -83,6 +83,19 @@
         <img src="https://via.placeholder.com/250" alt="">
         <legend>Producto 6</legend>
       </a>
+    </section>
+
+    <section id="contacto">
+      <form action="#">
+        <legend>Contactanos</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="pregunta">Escribe tu pregunta</label>
+        <textarea id="pregunta" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
     </section>
   </main>
   <footer>
