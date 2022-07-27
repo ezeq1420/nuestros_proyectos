@@ -2,109 +2,94 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="./css/basico.css">
-  <link rel="stylesheet" href="./css/medio.css">
-  <link rel="stylesheet" href="./css/grande.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de ropa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <div>
-      <a href="https://facebook.com"><img src="https://via.placeholder.com/30.png" alt=""></a>
-      <a href="https://instagram.com"><img src="https://via.placeholder.com/30.png" alt=""></a>
-    </div>
-    <img src="https://via.placeholder.com/70.png?text=logo" alt="">
-  </header>
-  <main>
-    <h1>Nombre de la Empresa</h1>
-    <img src="https://via.placeholder.com/1250x550" alt="">
+    <header>
+        <nav class="redes">
+            <a class="redes__red" href="https://facebook.com"><img src="src/img/facebook.svg" alt="">Fashion Store</a>
+            <a class="redes__red" href="https://instagram.com"><img src="src/img/instagram.svg" alt="">Fashion Store</a>
+        </nav>
 
-    <section id="ofertas">
-      <div>
-        <img src="https://via.placeholder.com/300x250" alt="">
-        <ul>
-          <li>
-            <h2>Producto</h2>
-          </li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/300x250" alt="">
-        <ul>
-          <li>
-            <h2 id="productos">Producto</h2>
-          </li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
-      </div>
-    </section>
+        <nav class="nav">
+            <h1 class="nav__logo">Fashion Store</h1>
+            <div class="nav__links">
+                <a class="nav__link" href="./index.html">Inicio</a>
+                <a class="nav__link" href="#">Productos</a>
+                <a class="nav__link" href="#">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="entrada img">
+            <h1 class="entrada__titulo">Fashion Store</h1>
+            <p class="entrada__parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
 
-    <section id="categorias">
-      <a href="#">
-        <img src="https://via.placeholder.com/250" alt="">
-        <legend>Producto 1</legend>
-      </a>
-      <a href="#">
-        <img src="https://via.placeholder.com/250" alt="">
-        <legend>Producto 2</legend>
-      </a>
-      <a href="#">
-        <img src="https://via.placeholder.com/250" alt="">
-        <legend>Producto 3</legend>
-      </a>
-      <a href="#">
-        <img src="https://via.placeholder.com/250" alt="">
-        <legend>Producto 4</legend>
-      </a>
-      <a href="#">
-        <img src="https://via.placeholder.com/250" alt="">
-        <legend>Producto 5</legend>
-      </a>
-      <a href="#">
-        <img src="https://via.placeholder.com/250" alt="">
-        <legend>Producto 6</legend>
-      </a>
-    </section>
+        <section class="hero" id="ofertas">
+            <div class="hero__contenido">
+                <img class="hero__img" src="src/img/modelo2.webp" alt="">
+                <div class="hero__texto">
+                    <h2>La Mejor Calidad</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="hero__contenido">
+                <div class="hero__texto">
+                    <h2>El mejor precio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <img class="hero__img" src="src/img/modelo4.webp" alt="">
+            </div>
+        </section>
 
-    <section id="contacto">
-      <form action="#">
-        <legend>Contactanos</legend>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre">
-        <label for="email">Email</label>
-        <input type="email" id="email">
-        <label for="pregunta">Escribe tu pregunta</label>
-        <textarea id="pregunta" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; <span id="this-year"></span> .:|:. Rodriguez y Condori .:|:. Argentina</p>
-    <span id="fecha-mod"></span>
-  </footer>
+        <h2 class="titulo">Nuestros Productos</h2>
+        <section id="categorias" class="producto">
+            <a class="producto__contenido" href="#">
+                <img class="producto__img" src="https://via.placeholder.com/250" alt="">
+                <legend class="producto__titulo">Producto 1</legend>
+            </a>
+            <a class="producto__contenido" href="#">
+                <img class="producto__img" src="https://via.placeholder.com/250" alt="">
+                <legend class="producto__titulo">Producto 2</legend>
+            </a>
+            <a class="producto__contenido" href="#">
+                <img class="producto__img" src="https://via.placeholder.com/250" alt="">
+                <legend class="producto__titulo">Producto 3</legend>
+            </a>
+            <a class="producto__contenido" href="#">
+                <img class="producto__img" src="https://via.placeholder.com/250" alt="">
+                <legend class="producto__titulo">Producto 4</legend>
+            </a>
+            <a class="producto__contenido" href="#">
+                <img class="producto__img" src="https://via.placeholder.com/250" alt="">
+                <legend class="producto__titulo">Producto 5</legend>
+            </a>
+            <a class="producto__contenido" href="#">
+                <img class="producto__img" src="https://via.placeholder.com/250" alt="">
+                <legend class="producto__titulo">Producto 6</legend>
+            </a>
 
-  <script src="./js/this-year.js"></script>
-  <script src="./js/fecha-mod.js"></script>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contenido">
+            <p>&copy; <span id="this-year"></span> .:|:. Rodriguez & Condori .:|:. Argentina</p>
+            <span id="fecha-mod"></span>
+        </div>
+    </footer>
+
+    <script src="./js/this-year.js"></script>
+    <script src="./js/fecha-mod.js"></script>
 
 </body>
 
